@@ -3,111 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Hero Section</title>
+    <title>FinanceOS - Financial Infrastructure for Modern Teams</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Resourcesreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
         }
-        .font-serif {
-            font-family: 'Newsreader', serif;
+        
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .btn-transition {
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-elevated {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
         }
     </style>
 </head>
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-[#fafafa] text-gray-900 antialiased">
 
     <!-- Top Bar -->
-    <div class="bg-[#0f0f0f] text-white text-[13px] py-2.5 flex justify-center items-center gap-2 font-medium tracking-wide">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#00b060]"></span>
-        <p>Automate your self-assessment and admin with AI <a href="#" class="underline decoration-1 underline-offset-2 ml-1 text-gray-200 hover:text-white">See How</a></p>
+    <div class="bg-white border-b border-gray-200 text-gray-600 text-[13px] py-2.5 flex justify-center items-center gap-2 font-medium">
+        <span class="w-1 h-1 rounded-full bg-[#4F46E5]"></span>
+        <p>Now SOC 2 Type II certified — Enterprise-grade security for your financial data <a href="#" class="ml-1.5 text-gray-900 hover:text-[#4F46E5] btn-transition">Learn more →</a></p>
     </div>
 
     <!-- Navigation -->
-    <nav class="border-b border-gray-100 px-6 py-4 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50">
+    <nav class="border-b border-gray-200 px-6 py-4 flex justify-between items-center sticky top-0 bg-white/98 backdrop-blur-sm z-50">
         <!-- Logo -->
         <div class="flex items-center">
-            <a href="#" class="text-2xl font-medium tracking-tight text-black">Company</a>
+            <a href="#" class="text-xl font-semibold tracking-tight text-gray-900">FinanceOS</a>
         </div>
 
         <!-- Center Links -->
-        <div class="hidden md:flex items-center gap-8 text-[15px] text-[#475569] font-medium">
-            <a href="#" class="hover:text-black transition-colors">Tax Filing</a>
-            <a href="#" class="hover:text-black transition-colors">Disputes</a>
-            <a href="#" class="hover:text-black transition-colors">Company</a>
-            <a href="#" class="hover:text-black transition-colors">News</a>
-            <a href="#" class="hover:text-black transition-colors">About</a>
+        <div class="hidden md:flex items-center gap-8 text-[14px] text-gray-600 font-medium">
+            <a href="#" class="hover:text-gray-900 btn-transition">Platform</a>
+            <a href="#" class="hover:text-gray-900 btn-transition">Pricing</a>
+            <a href="#" class="hover:text-gray-900 btn-transition">Customers</a>
+            <a href="#" class="hover:text-gray-900 btn-transition">Docs</a>
         </div>
 
         <!-- Right Actions -->
-        <div class="flex items-center gap-6">
-            <a href="#" class="text-[15px] font-medium text-gray-900 hover:text-gray-600">Log in</a>
-            <a href="#" class="bg-[#111] text-white text-[15px] font-medium px-5 py-2.5 rounded-full hover:bg-black transition-colors">Start Filing</a>
+        <div class="flex items-center gap-4">
+            <a href="#" class="text-[14px] font-medium text-gray-600 hover:text-gray-900 btn-transition">Sign in</a>
+            <a href="#" class="bg-gray-900 text-white text-[14px] font-medium px-4 py-2 rounded-md hover:bg-gray-800 btn-transition">Request demo</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <main class="pt-24 pb-0">
-        <div class="max-w-7xl mx-auto px-4 text-center">
+    <main class="pt-20 pb-0">
+        <div class="max-w-5xl mx-auto px-6 text-center">
             
             <!-- Headline -->
-            <h1 class="font-serif text-5xl md:text-[4.5rem] leading-[1.1] text-[#111] mb-6 tracking-tight">
-                Never Dread Your Tax Return Again
+            <h1 class="text-5xl md:text-[3.5rem] leading-[1.1] text-gray-900 mb-5 tracking-tight font-medium">
+                Financial infrastructure for<br class="hidden md:block"> modern businesses
             </h1>
 
             <!-- Subheadline -->
-            <p class="text-gray-500 text-lg md:text-[1.15rem] leading-relaxed max-w-2xl mx-auto mb-12 font-normal">
-                Company handles your filing, negotiation, and legal challenges.<br class="hidden md:block">
-                Built specifically for the UK self-employed.
+            <p class="text-gray-600 text-base md:text-[1.05rem] leading-relaxed max-w-2xl mx-auto mb-10 font-normal">
+                Complete visibility and control over payments, invoicing, and financial operations.<br class="hidden md:block">
+                Built for CFOs and finance teams who demand precision.
             </p>
 
-            <!-- CTA Button with Brackets -->
-            <div class="relative inline-block mb-24 group cursor-pointer">
-                <!-- Top Left Bracket -->
-                <div class="absolute -top-2 -left-4 w-3 h-3 border-t-[2.5px] border-l-[2.5px] border-black"></div>
-                
-                <a href="#" class="block bg-[#111] text-white text-[17px] font-medium px-9 py-3.5 rounded-full hover:bg-black hover:scale-105 transition-transform duration-200">
-                    Try the Instant Demo
+            <!-- CTA Buttons -->
+            <div class="flex items-center justify-center gap-3 mb-20">
+                <a href="#" class="bg-gray-900 text-white text-[15px] font-medium px-5 py-2.5 rounded-md hover:bg-gray-800 btn-transition">
+                    Request demo
                 </a>
-
-                <!-- Bottom Right Bracket -->
-                <div class="absolute -bottom-2 -right-4 w-3 h-3 border-b-[2.5px] border-r-[2.5px] border-black"></div>
+                <a href="#" class="bg-white border border-gray-300 text-gray-700 text-[15px] font-medium px-5 py-2.5 rounded-md hover:border-gray-400 hover:bg-gray-50 btn-transition">
+                    View pricing
+                </a>
             </div>
 
         </div>
 
-        <!-- Hero Image Container -->
-        <div class="relative w-full h-[600px] md:h-[700px] overflow-hidden">
-            <!-- Background Image Placeholder (Skyscrapers) -->
-            <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/8bdfdbf3-bca4-459b-b41b-ce4d7728ab6a/hero-1-img-0-1770206639339.png" alt="Skyscrapers Background" class="w-full h-full object-cover object-center opacity-90">
-            
-            <!-- Overlay Gradient/Tint to match the bluish/gray tone -->
-            <div class="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent mix-blend-overlay"></div>
-
-            <!-- Floating UI Card -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[580px]">
-                <div class="bg-white rounded-xl shadow-2xl p-5 h-[160px] flex flex-col justify-between border border-gray-100/50">
-                    <!-- Input Text -->
-                    <div class="text-lg text-gray-800 font-normal">
-                        file my self-assessment
-                    </div>
-
-                    <!-- Bottom Row: Icon and Button -->
-                    <div class="flex justify-between items-end">
-                        <!-- Paperclip Icon -->
-                        <div class="text-gray-400 hover:text-gray-600 cursor-pointer pb-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 rotate-45">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
-                            </svg>
+        <!-- Product Dashboard Preview -->
+        <div class="max-w-6xl mx-auto px-6 pb-20">
+            <div class="bg-white rounded-lg border border-gray-200 card-elevated overflow-hidden">
+                <!-- Dashboard Header -->
+                <div class="border-b border-gray-200 px-6 py-4 flex items-center justify-between bg-white">
+                    <div class="flex items-center gap-6">
+                        <h3 class="text-sm font-medium text-gray-900">Overview</h3>
+                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                            <a href="#" class="hover:text-gray-900 btn-transition">Transactions</a>
+                            <a href="#" class="hover:text-gray-900 btn-transition">Invoices</a>
+                            <a href="#" class="hover:text-gray-900 btn-transition">Reports</a>
                         </div>
-
-                        <!-- Submit Arrow Button -->
-                        <button class="bg-[#1a5c4d] hover:bg-[#144a3d] text-white p-2 rounded-lg transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button class="text-sm text-gray-600 hover:text-gray-900 btn-transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                             </svg>
                         </button>
+                        <button class="bg-gray-900 text-white text-sm font-medium px-3.5 py-1.5 rounded-md hover:bg-gray-800 btn-transition">New payment</button>
+                    </div>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div class="p-6 bg-gray-50">
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="bg-white border border-gray-200 rounded-md p-4">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Total balance</div>
+                            <div class="text-2xl font-semibold text-gray-900 mb-1">$847,382.00</div>
+                            <div class="text-xs text-green-600">+12.5% from last month</div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-md p-4">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Pending invoices</div>
+                            <div class="text-2xl font-semibold text-gray-900 mb-1">$124,650.00</div>
+                            <div class="text-xs text-gray-600">18 invoices outstanding</div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-md p-4">
+                            <div class="text-xs font-medium text-gray-500 mb-1">Monthly spend</div>
+                            <div class="text-2xl font-semibold text-gray-900 mb-1">$64,230.00</div>
+                            <div class="text-xs text-gray-600">Across 147 transactions</div>
+                        </div>
+                    </div>
+
+                    <!-- Transaction List -->
+                    <div class="bg-white border border-gray-200 rounded-md">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <h4 class="text-sm font-medium text-gray-900">Recent transactions</h4>
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div class="px-4 py-3 flex items-center justify-between hover:bg-gray-50 btn-transition">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-900">Acme Corporation</div>
+                                        <div class="text-xs text-gray-500">Invoice #INV-2847 • Jan 15, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-900">+$12,500.00</div>
+                            </div>
+                            <div class="px-4 py-3 flex items-center justify-between hover:bg-gray-50 btn-transition">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-900">AWS Infrastructure</div>
+                                        <div class="text-xs text-gray-500">Monthly service • Jan 14, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-900">-$4,832.00</div>
+                            </div>
+                            <div class="px-4 py-3 flex items-center justify-between hover:bg-gray-50 btn-transition">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-900">Payroll Processing</div>
+                                        <div class="text-xs text-gray-500">Team payment • Jan 12, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-900">-$28,400.00</div>
+                            </div>
+                            <div class="px-4 py-3 flex items-center justify-between hover:bg-gray-50 btn-transition">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-medium text-gray-900">Global Dynamics Inc</div>
+                                        <div class="text-xs text-gray-500">Invoice #INV-2846 • Jan 11, 2024</div>
+                                    </div>
+                                </div>
+                                <div class="text-sm font-medium text-gray-900">+$8,750.00</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
